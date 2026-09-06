@@ -450,6 +450,37 @@ html, body {
   background: var(--action-primary);
 }
 
+/* Native radio inside stage cards */
+.stage-radio.form-check-input {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0;
+  border: 1.5px solid var(--border-strong);
+  background-color: var(--bg-surface);
+  cursor: pointer;
+}
+.stage-radio.form-check-input:checked {
+  background-color: var(--bg-surface);
+  border-color: var(--action-primary);
+  border-width: 2px;
+  background-image: radial-gradient(circle, var(--action-primary) 42%, transparent 46%);
+}
+.stage-radio.form-check-input:focus {
+  border-color: var(--action-primary);
+  box-shadow: 0 0 0 3px rgba(0, 158, 224, 0.2);
+}
+
+/* Highlight the whole stage card when its radio is checked */
+.stage-card {
+  position: relative;
+}
+.stage-card:has(.stage-radio:checked) {
+  background: var(--bg-surface-selected);
+  border: 1.5px solid var(--border-selected);
+  padding: 13.5px 17.5px 13.5px 15.5px;
+}
+
 .choice-body {
   flex: 1 1 auto;
   min-width: 0;
