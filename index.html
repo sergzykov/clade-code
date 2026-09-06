@@ -199,11 +199,10 @@
                 <p class="section-sub">Choose one tuning stage.</p>
               </header>
 
-              <div class="row g-3">
+              <div class="row g-3" role="radiogroup" aria-label="Tuning stage">
                 <div class="col-12 col-md-4">
-                  <label class="choice-card selected">
-                    <input type="radio" name="stage" value="1" class="visually-hidden" checked>
-                    <span class="choice-indicator radio" aria-hidden="true"></span>
+                  <label class="choice-card stage-card" for="stage-1">
+                    <input type="radio" name="stage" id="stage-1" value="1" class="form-check-input stage-radio" checked>
                     <span class="choice-body">
                       <span class="choice-title">Stage 1</span>
                       <span class="chip chip-primary">1 credit</span>
@@ -211,9 +210,8 @@
                   </label>
                 </div>
                 <div class="col-12 col-md-4">
-                  <label class="choice-card">
-                    <input type="radio" name="stage" value="2" class="visually-hidden">
-                    <span class="choice-indicator radio" aria-hidden="true"></span>
+                  <label class="choice-card stage-card" for="stage-2">
+                    <input type="radio" name="stage" id="stage-2" value="2" class="form-check-input stage-radio">
                     <span class="choice-body">
                       <span class="choice-title">Stage 2</span>
                       <span class="chip chip-soft">1 credit</span>
@@ -221,9 +219,8 @@
                   </label>
                 </div>
                 <div class="col-12 col-md-4">
-                  <label class="choice-card">
-                    <input type="radio" name="stage" value="3" class="visually-hidden">
-                    <span class="choice-indicator radio" aria-hidden="true"></span>
+                  <label class="choice-card stage-card" for="stage-3">
+                    <input type="radio" name="stage" id="stage-3" value="3" class="form-check-input stage-radio">
                     <span class="choice-body">
                       <span class="choice-title">Stage 3</span>
                       <span class="chip chip-soft">2 credits</span>
